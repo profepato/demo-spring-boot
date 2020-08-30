@@ -11,6 +11,7 @@ public class ProductDaoImpl implements ProductDao {
     public ProductResponse getProducts() {
         ProductResponse productResponse = new ProductResponse();
 
+        /*
         Product product1 = new Product(1, "name1", 100);
         Product product2 = new Product(2, "name2", 200);
         Product product3 = new Product(3, "name3", 300);
@@ -18,6 +19,7 @@ public class ProductDaoImpl implements ProductDao {
         productResponse.addProduct(product1);
         productResponse.addProduct(product2);
         productResponse.addProduct(product3);
+        */
 
         return productResponse;
     }

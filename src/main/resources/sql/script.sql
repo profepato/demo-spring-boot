@@ -3,16 +3,16 @@ CREATE DATABASE products_db;
 USE products_db;
 
 CREATE TABLE product(
-    id      INTEGER AUTO_INCREMENT,
-    name    VARCHAR(200),
-    brand   VARCHAR(200),
-    price   INTEGER,
-    stock   INTEGER,
-    PRIMARY KEY(id)
+    product_id      INTEGER AUTO_INCREMENT,
+    product_name    VARCHAR(200),
+    product_brand   VARCHAR(200),
+    product_price   INTEGER,
+    product_stock   INTEGER,
+    PRIMARY KEY(product_id)
 );
 
 INSERT INTO
-    product (name, brand, price, stock)
+    product (product_name, product_brand, product_price, product_stock)
 VALUES
     ('Name 1','Brand 1',100, 1000),
     ('Name 2','Brand 2',200, 2000),
