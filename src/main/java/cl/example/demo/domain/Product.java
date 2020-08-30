@@ -1,5 +1,6 @@
 package cl.example.demo.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 import javax.persistence.*;
@@ -11,7 +12,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
-    private int id;
+    private Integer id;
 
     @Column(name = "product_name")
     private String name;
@@ -20,8 +21,8 @@ public class Product {
     private String brand;// en un futuro será otra entidad
 
     @Column(name = "product_price")
-    private int price;
+    private Integer price;
 
     @Column(name = "product_stock")
-    private int stock;
+    private Integer stock;
 }

@@ -1,6 +1,8 @@
 package cl.example.demo.domain.responses;
 
 import cl.example.demo.domain.Product;
+import cl.example.demo.domain.ProductDto;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -8,13 +10,20 @@ import java.util.List;
 
 @Data
 public class ProductResponse {
-    private List<Product> products;
+    private List<ProductDto> products;
 
-    public ProductResponse(){
-        this.products = new ArrayList<>();
-    }
+    public ProductResponse(List<Product> productList){
+        products = new ArrayList<>();
 
-    public void addProduct(Product product){
-        this.products.add(product);
+        // BeanUtils.copy
+        for(Product product : productList){
+            ProductDto productDto = new ProductDto();
+
+            productDto.setId(product.getId());
+            productDto.setName(product.getName());
+            productDto.setBrand(product.getBrand());
+
+            products.add(productDto);
+        }
     }
 }
