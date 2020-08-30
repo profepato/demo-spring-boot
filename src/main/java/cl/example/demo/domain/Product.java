@@ -8,5 +8,7 @@ import lombok.*;
 public class Product {
     private int id;
     private String name;
+    private String brand;// en un futuro será otra entidad
     private int price;
+    private int stock;
 }
