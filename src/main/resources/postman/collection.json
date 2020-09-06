@@ -1,0 +1,71 @@
+{
+    "info": {
+        "_postman_id": "18ef6eaf-d790-4a27-8ed2-ac4666ae3d00",
+        "name": "Live | Spring boot",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET /api/v1/products/{id}",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:8080/api/v1/products/1",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "v1",
+                        "products",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /api/v1/products",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:8080/api/v1/products",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "v1",
+                        "products"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GET /api/v1/app",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:8080/api/v1/app",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "api",
+                        "v1",
+                        "app"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "protocolProfileBehavior": {}
+}
